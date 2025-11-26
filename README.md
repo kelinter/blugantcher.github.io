@@ -2,7 +2,7 @@
 
 A simple portfolio site for Blu Gantcher, a creative writing major at Bucknell University, showcasing fiction, essays, food writing, and literary editorial work.
 
-Live site: https://kelinter.github.io/blu-gantcher-portfolio
+Live site: https://kelinter.github.io/blugantcher.github.io/
 
 ## Pages
 
@@ -12,10 +12,4 @@ Live site: https://kelinter.github.io/blu-gantcher-portfolio
 - `style.css` – Shared styles for all pages
 - `assets/` – Images, PDFs, and other static files
 
-## Development
 
-1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/kelinter/blu-gantcher-portfolio.git
-   cd blu-gantcher-portfolio
