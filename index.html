@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Typewriter header (from your layout) */
+    /* Typewriter header (same layout as Kelly's) */
     .typewriter {
       text-align: center;
       margin: 3rem 0;
@@ -65,7 +65,7 @@
       }
     }
 
-    /* Nav bar from your layout, links reused for Blu */
+    /* Nav bar (same style as your site) */
     nav {
       width: 100%;
       background-color: #0f172a;
@@ -111,7 +111,7 @@
     <h1>Hi, I’m Blu!</h1>
   </header>
 
-  <!-- Navigation bar (using Blu’s page names) -->
+  <!-- Navigation bar -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -120,17 +120,16 @@
     </ul>
   </nav>
 
-  <!-- Intro section with Blu.jpeg on the left (your layout) -->
+  <!-- Intro section with Blu.jpeg on the left -->
   <div class="container-image-left">
     <img id="me" src="./assets/Blu.jpeg" alt="Photo of Blu Gantcher.">
     <p>
-      Hello! I’m <strong>Blu Gantcher</strong>, a creative writing major at Bucknell University (’26)
-      interested in <strong>fiction</strong>, <strong>literary journalism</strong>, and <strong>food writing</strong>.
+      Hello! I’m Blu Gantcher, a creative writing major at Bucknell University (’26)
+      interested in fiction, literary journalism, and food writing.
       I love exploring how personal stories, place, and memory show up on the page.
       <br><br>
-      I’ve participated in the <strong>Yale Writers’ Workshop</strong>, completed NYU programs in
-      <strong>Op-Ed writing</strong> and <strong>food writing</strong>, and worked with the editorial team
-      at <strong>West Branch</strong>, reading submissions and engaging with contemporary literature.
+      I’ve participated in the Yale Writers’ Workshop, completed NYU programs in Op-Ed writing and food writing, and worked with the editorial team
+      at West Branch, reading submissions and engaging with contemporary literature.
       <br><br>
       This site gathers a few of my favorite pieces—from short fiction to reported essays and
       literary journalism projects. Feel free to explore my work and reach out if you’d like to
@@ -138,38 +137,24 @@
     </p>
   </div>
 
-  <!-- Recent Highlights section (from Blu’s original home page) -->
-  <section class="section">
-    <div class="container">
-      <h2>Recent Highlights</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Yale Writers’ Workshop</h3>
-          <p class="card-meta">Summer Program</p>
-          <p class="card-body">
-            One-week intensive with workshops, readings, and 1:1 feedback with
-            professional writers and Yale faculty.
-          </p>
-        </article>
-        <article class="card">
-          <h3>NYU Journalism Programs</h3>
-          <p class="card-meta">Writing the Op-Ed &amp; Food Writing</p>
-          <p class="card-body">
-            Developed essays and reported pieces focused on opinion writing and NYC food culture.
-          </p>
-        </article>
-        <article class="card">
-          <h3>West Branch Internships</h3>
-          <p class="card-meta">Editing &amp; Literary Journalism (Spring 2026)</p>
-          <p class="card-body">
-            Working with the editorial team on literary submissions, book reviews, and interviews.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
+  <!-- Contact form (Formspree for Blu) -->
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mkglwege" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <!-- Simple footer for Blu -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
       <p>© 2025 Blu Gantcher</p>
