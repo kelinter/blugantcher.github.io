@@ -1,48 +1,21 @@
-# Blu Gantcher - Portfolio Website
+# Blu Gantcher – Creative Writing Portfolio
 
-A professional portfolio website showcasing creative writing projects and personal writing content.
+A simple portfolio site for Blu Gantcher, a creative writing major at Bucknell University, showcasing fiction, essays, food writing, and literary editorial work.
 
-**Live Site**: https://blugantcher.github.io
+Live site: https://kelinter.github.io/blu-gantcher-portfolio
 
-## Overview
+## Pages
 
+- `index.html` – Landing page with a short intro and featured pieces
+- `aboutme.html` – Bio, education, writing programs, and internships
+- `writing.html` – Organized list of writing samples (fiction, essays, food writing)
+- `style.css` – Shared styles for all pages
+- `assets/` – Images, PDFs, and other static files
 
-## Featured Projects
+## Development
 
+1. Clone the repo:
 
-### Portfolio Website
-- Responsive personal website with professional design
-- Contact form integration and mobile optimization
-- Technologies: HTML5, CSS3, JavaScript, GitHub Pages
-
-## Technical Implementation
-
-### Frontend Development
-- Semantic HTML5 with accessibility considerations
-- Modern CSS Grid and Flexbox layouts
-- Responsive design with mobile-first approach
-
-### Design System
-- Professional color palette: slate and sky blue theme
-- Inter typography for readability
-- Consistent spacing and visual hierarchy
-- Mobile touch targets following platform guidelines
-
-
-## Development Setup
-
-1. Clone the repository
-2. Open index.html in a web browser for local testing
-3. Deploy to GitHub Pages by pushing to main branch
-
-## File Structure
-
-
-## Contact
-
-**Blu Gantcher**  
-Creative Writing Student, Bucknell University  
-Email: dbg007@bucknell.edu  
-LinkedIn: https://www.linkedin.com/in/blugantcher/
-
-
+   ```bash
+   git clone https://github.com/kelinter/blu-gantcher-portfolio.git
+   cd blu-gantcher-portfolio
