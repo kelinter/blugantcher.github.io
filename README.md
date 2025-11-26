@@ -1,4 +1,4 @@
-# Kelly Interiano - Portfolio Website
+# Blu Gantcher - Portfolio Website
 
 A professional portfolio website showcasing creative writing projects and personal writing content.
 
