@@ -1338,3 +1338,66 @@ nav ul li a:focus {
   top: 0.1rem;
 }
 
+/* Center section page headers */
+#aboutme-header h1,
+#portfolio-header h1 {
+  text-align: center;
+}
+
+/* Contact form button + fields theme */
+
+.contact-container button[type="submit"] {
+  background-color: #8b3a62;      /* wine */
+  border: 1px solid #8b3a62;
+  color: #fdf7ee;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 12px 32px;
+}
+
+.contact-container button[type="submit"]:hover {
+  background-color: #5a2741;
+  border-color: #5a2741;
+}
+
+/* Match input focus glow to theme instead of blue */
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  border-color: #8b3a62;
+  box-shadow: 0 0 0 3px rgba(139, 58, 98, 0.15);
+}
+
+/* Resume section – match literary theme */
+.resume-section {
+  background: #fffaf3;            /* soft paper instead of blue gradient */
+  border: 1px solid #e3d4c2;
+}
+
+.resume-cta h3 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  color: #2b2020;
+}
+
+.resume-cta p {
+  color: #5a4a45;
+}
+
+/* Download Resume button */
+.resume-btn {
+  background-color: #8b3a62;      /* wine */
+  border: 1px solid #8b3a62;
+  color: #fdf7ee;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(139, 58, 98, 0.25);
+}
+
+.resume-btn:hover {
+  background-color: #5a2741;
+  border-color: #5a2741;
+  box-shadow: 0 8px 20px rgba(90, 39, 65, 0.35);
+}
+
