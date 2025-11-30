@@ -6,83 +6,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header class="site-header">
-  <div class="container nav-container">
-    <div class="logo">
-      <a href="index.html">Blu Gantcher</a>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="portfolio.html" class="active">Portfolio</a>
-    </nav>
-  </div>
-</header>
+<body id="body3">
+  <!-- Page header to match About page style -->
+  <header id="portfolio-header">
+    <h1>Portfolio</h1>
+  </header>
 
-<main>
-  <section class="section">
-    <div class="container">
-      <h1>Writing Portfolio</h1>
-      <p class="section-intro">
-        Below are a few sample pieces. These are placeholders — you can later swap in real titles
-        and link to PDFs, Google Docs, or published work.
-      </p>
+  <!-- Same nav as other pages -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
 
-      <h2>Fiction</h2>
-      <div class="card-list">
-        <article class="card">
-          <h3>Story Title Here</h3>
-          <p class="card-meta">Short Story</p>
-          <p class="card-body">
-            One–two sentences describing the story (characters, themes, or setting).
-          </p>
-          <a href="#" class="card-link">Read story</a>
-        </article>
-      </div>
-
-      <h2>Essays & Op-Eds</h2>
-      <div class="card-list">
-        <article class="card">
-          <h3>Essay Title Here</h3>
-          <p class="card-meta">Personal Essay / Op-Ed</p>
-          <p class="card-body">
-            Short description of the essay’s topic and angle.
-          </p>
-          <a href="#" class="card-link">Read essay</a>
-        </article>
-      </div>
-
-      <h2>Food Writing & Reporting</h2>
-      <div class="card-list">
-        <article class="card">
-          <h3>Article Title Here</h3>
-          <p class="card-meta">Food Writing</p>
-          <p class="card-body">
-            Brief explanation of the restaurant, dish, or trend the piece focuses on.
-          </p>
-          <a href="#" class="card-link">Read article</a>
-        </article>
-      </div>
-
-      <!-- Optional: resume link at the bottom -->
-      <h2>Resume</h2>
-      <p>
-        You can also view my full resume:
-        <a href="assets/blu-gantcher-resume.pdf" target="_blank" rel="noopener">
-          Download Resume (PDF)
-        </a>
-      </p>
-    </div>
+  <!-- Intro text -->
+  <section class="portfolio-intro">
+    <p>
+      Here are three pieces that represent the kind of work I’m most excited about right now—
+      character-driven fiction that plays with voice, memory, and the small details of everyday life.
+      Each card links to a full PDF of the story.
+    </p>
   </section>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-content">
-    <p>© 2025 Blu Gantcher</p>
-  </div>
-</footer>
+  <!-- Writing cards grid -->
+  <section class="projects-grid">
 
+    <!-- Kiochi's Father -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-placeholder-img">
+          <span class="project-icon">✒️</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Kiochi’s Father</h2>
+        <p class="project-description">
+          A quiet, character-focused story about family, distance, and the things that go unsaid
+          between parents and children. The piece follows Kiochi as he tries to make sense of
+          his father’s choices and his own shifting sense of self.
+        </p>
+
+        <div class="tech-stack">
+          <span class="tech-badge">Short Fiction</span>
+          <span class="tech-badge">Family</span>
+          <span class="tech-badge">Coming-of-age</span>
+        </div>
+
+        <div class="project-links">
+          <!-- Update the filename if your PDF is named differently -->
+          <a href="./assets/Kiochi's Father.pdf" target="_blank" rel="noopener" class="link-btn primary">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M4 2h12v2H4zm0 5h12v2H4zm0 5h7v2H4z" />
+            </svg>
+            Read PDF
+          </a>
+        </div>
+
+        <div class="project-meta">
+          <span class="meta-item">Fiction • Approx. length: short story</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fish -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-placeholder-img">
+          <span class="project-icon">🐟</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Fish</h2>
+        <p class="project-description">
+          A story that blends the surreal with the everyday, using water and fish imagery to
+          explore bodies, borders, and the feeling of being slightly out of place in your own life.
+        </p>
+
+        <div class="tech-stack">
+          <span class="tech-badge">Short Fiction</span>
+          <span class="tech-badge">Surreal</span>
+          <span class="tech-badge">Identity</span>
+        </div>
+
+        <div class="project-links">
+          <a href="./assets/fish.pdf" target="_blank" rel="noopener" class="link-btn primary">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M4 2h12v2H4zm0 5h12v2H4zm0 5h7v2H4z" />
+            </svg>
+            Read PDF
+          </a>
+        </div>
+
+        <div class="project-meta">
+          <span class="meta-item">Fiction • Experimental tone</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- The Late Bloomer -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-placeholder-img">
+          <span class="project-icon">🌸</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">The Late Bloomer</h2>
+        <p class="project-description">
+          A reflective piece about coming into yourself later than you expected—socially, emotionally,
+          or otherwise. It looks at friendships, growth, and the pressure to “have it all figured out”
+          on a certain timeline.
+        </p>
+
+        <div class="tech-stack">
+          <span class="tech-badge">Short Fiction</span>
+          <span class="tech-badge">Coming-of-age</span>
+          <span class="tech-badge">Introspective</span>
+        </div>
+
+        <div class="project-links">
+          <a href="./assets/The Late Bloomer.pdf" target="_blank" rel="noopener" class="link-btn primary">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M4 2h12v2H4zm0 5h12v2H4zm0 5h7v2H4z" />
+            </svg>
+            Read PDF
+          </a>
+        </div>
+
+        <div class="project-meta">
+          <span class="meta-item">Fiction • Voice-driven</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Little note at the bottom -->
+  <section class="portfolio-footer">
+    <p>
+      More pieces are available upon request.
+      Feel free to <a href="mailto:dbg007@bucknell.edu" class="email-link">reach out</a> for additional samples.
+    </p>
+  </section>
+
+  <!-- Same footer style as other pages -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <a href="mailto:dbg007@bucknell.edu">
+          <img src="./assets/gmail.png" alt="Email" class="contact-icon">
+          dbg007@bucknell.edu
+        </a>
+        <a href="https://www.linkedin.com/in/blugantcher" target="_blank">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="footer-note">
+        Creative Writing major • Bucknell University • Class of 2026
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
