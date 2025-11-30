@@ -1283,3 +1283,58 @@ nav ul li a:focus {
     grid-template-columns: 1fr;
   }
 }
+
+/* === About page: remove old blue theme === */
+
+.about-section h2 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: #2b2020;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #ccb39c;  /* warm neutral instead of blue */
+}
+
+/* Cards under Education / Writing & Work Experience */
+.education-item,
+.experience-item {
+  background: #fffaf3;                 /* soft paper */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3d4c2;           /* warm border */
+}
+
+.education-item h3,
+.experience-item h3 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 600;
+  color: #2b2020;
+}
+
+/* Company / location line under job titles */
+.company {
+  color: #8b3a62;                      /* wine accent */
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Bullet list styling under each experience */
+.experience-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #5a4a45;                      /* softer text */
+  line-height: 1.6;
+}
+
+.experience-list li:before {
+  content: '▸';
+  color: #8b3a62;                      /* wine arrow instead of blue */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+}
+
