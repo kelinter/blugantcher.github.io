@@ -1,5 +1,5 @@
-/* Import professional fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Import literary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lora:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* Reset styles and box-sizing */
 * {
@@ -1067,5 +1067,219 @@ button:hover {
     padding: 1.25rem 2rem;
     font-size: 1.1rem;
     justify-content: center;
+  }
+}
+
+/* === Literary Journal Theme Overrides (Option 1) === */
+
+/* Global typography + background */
+body {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  color: #2b2020;
+  background-color: #f5ede2; /* warm cream */
+}
+
+/* Remove bright card frame around each page */
+#body1,
+#body2,
+#body3 {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  padding: 2.5rem 1.5rem 3rem;
+  min-height: 100vh;
+}
+
+/* Constrain content like a page */
+header,
+nav,
+.about-container,
+.portfolio-intro,
+.projects-grid,
+.footer-content,
+.contact-container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings feel book-ish */
+#homeheader,
+header h1,
+#aboutme-header h1,
+#portfolio-header h1,
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #2b2020;
+}
+
+#homeheader {
+  font-size: 2.8rem;
+}
+
+/* Default text links */
+a {
+  color: #8b3a62;
+}
+
+a:hover {
+  color: #5a2741;
+}
+
+/* Navigation: simple text strip with bottom border */
+nav {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0.75rem 0 1rem;
+  border-bottom: 1px solid rgba(112, 87, 74, 0.25);
+}
+
+nav ul {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: #5a4a45;
+  border: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #8b3a62;
+  transform: none;
+  text-decoration: underline;
+}
+
+/* Intro / body text tweaks */
+.intro-text,
+.portfolio-intro p,
+.about-intro p {
+  color: #5a4a45;
+}
+
+/* Project cards: softer "paper" look */
+.project-card {
+  background: #fffaf3;
+  border-radius: 10px;
+  border: 1px solid #e3d4c2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.08);
+  border-color: #8b3a62;
+}
+
+/* Card headers: warm gradient instead of blue */
+.project-header {
+  background: radial-gradient(
+    circle at top,
+    #fdf1dd 0%,
+    #f1ddc4 40%,
+    #e3c4b4 100%
+  );
+}
+
+/* Badges: subtle tags */
+.tech-badge {
+  background: #f6ead8;
+  color: #6f5950;
+  border-color: #e3d4c2;
+}
+
+.tech-badge:hover {
+  background: #8b3a62;
+  color: #fdf7ee;
+  border-color: #8b3a62;
+}
+
+/* Links/buttons use wine + moss as accents */
+.link-btn {
+  border-color: #e3d4c2;
+  color: #5a4a45;
+  background: #fffaf3;
+}
+
+.link-btn:hover {
+  background: #f0dfcf;
+  border-color: #8b3a62;
+  color: #2b2020;
+}
+
+.link-btn.primary {
+  background: #8b3a62;
+  border-color: #8b3a62;
+  color: #fdf7ee;
+}
+
+.link-btn.primary:hover {
+  background: #5a2741;
+  border-color: #5a2741;
+}
+
+.link-btn.play-btn {
+  background: #748b6f;
+  border-color: #748b6f;
+  color: #fdf7ee;
+}
+
+.link-btn.play-btn:hover {
+  background: #556d5a;
+  border-color: #556d5a;
+}
+
+/* Footer: quiet, minimal */
+.footer {
+  background: #f0e3d5;
+  color: #2b2020;
+  margin-top: 4rem;
+  padding: 1.75rem 0 2.25rem;
+  text-align: center;
+  border-top: 1px solid rgba(112, 87, 74, 0.25);
+}
+
+.footer-contact a {
+  color: #5a4a45;
+  background: transparent;
+}
+
+.footer-contact a:hover {
+  background: #e6d5c4;
+}
+
+.footer-note {
+  color: #6f5950;
+}
+
+/* Small-screen tweaks to keep things cozy */
+@media (max-width: 768px) {
+  #body1,
+  #body2,
+  #body3 {
+    padding: 1.5rem 1.25rem 2.5rem;
+  }
+
+  #homeheader,
+  header h1,
+  #aboutme-header h1,
+  #portfolio-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
