@@ -111,7 +111,7 @@ p {
   width: 300px;
   height: auto;
   border-radius: 10%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow to the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Styles for body2 and body3 (About and Portfolio pages) */
@@ -1338,12 +1338,6 @@ nav ul li a:focus {
   top: 0.1rem;
 }
 
-/* Center section page headers */
-#aboutme-header h1,
-#portfolio-header h1 {
-  text-align: center;
-}
-
 /* Contact form button + fields theme */
 
 .contact-container button[type="submit"] {
@@ -1399,5 +1393,19 @@ nav ul li a:focus {
   background-color: #5a2741;
   border-color: #5a2741;
   box-shadow: 0 8px 20px rgba(90, 39, 65, 0.35);
+}
+
+/* Force About + Portfolio page titles to be centered */
+#aboutme-header,
+#portfolio-header {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutme-header h1,
+#portfolio-header h1 {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
